@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/iconlogin"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:padding="18dp"
+        android:inputType="text"
+        android:id="@+id/username_imput"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:id="@+id/password_imput"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/login_btn"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/social_media"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="32sp"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/iconfacebook"
+            android:layout_margin="16dp"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+</RelativeLayout>

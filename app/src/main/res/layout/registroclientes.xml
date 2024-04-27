@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+  android:background="@drawable/welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Nombres"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/Name_imput"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Direccion"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/Dir_reg"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="username"
+        android:textColor="#E60000"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:padding="18dp"
+        android:inputType="text"
+        android:id="@+id/username_Reg"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner"
+        android:padding="18dp"
+        android:inputType="textPassword"
+        android:id="@+id/password_Reg"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registrar"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/login_btn"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</RelativeLayout>
